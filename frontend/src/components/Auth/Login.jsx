@@ -21,7 +21,7 @@ const Login = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/login",
+        "https://job.logicpay.in/api/v1/user/login",
         { email, password, role },
         {
           headers: {
